@@ -76,7 +76,7 @@ AWAY = ['services.', 'services.int']  # cloaks of people who are away.
 SIMPLE_NOTIFY = []  # cloaks of people who !simple, who want everything /notice'd
 
 ROLE_INDICES = {0 : "seer",
-                1 : "wolf",
+                1 : "lobo",
                 2 : "cursed villager",
                 3 : "village drunk",
                 4 : "harlot",
@@ -111,8 +111,8 @@ PING_IN = []  # cloaks of users who have opted in for ping
 is_role = lambda plyr, rol: rol in ROLES and plyr in ROLES[rol]
 
 def plural(role):
-    if role == "wolf": return "wolves"
-    elif role == "person": return "people"
+    if role == "lobo": return "lobos"
+    elif role == "persona": return "personas"
     else: return role + "s"
 
 def list_players():
@@ -151,7 +151,7 @@ def game_mode(name):
 
 
 CHANGEABLE_ROLES = { "seers"  : INDEX_OF_ROLE["seer"],
-                     "wolves" : INDEX_OF_ROLE["wolf"],
+                     "wolves" : INDEX_OF_ROLE["lobo"],
                      "cursed" : INDEX_OF_ROLE["cursed villager"],
                     "drunks"  : INDEX_OF_ROLE["village drunk"],
                    "harlots"  : INDEX_OF_ROLE["harlot"],
